@@ -1,0 +1,453 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: logo;
+  src: url(../font/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: buton;
+  src: url(../font/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: h1;
+  src: url(../font/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: p;
+  src: url(../font/Roboto-Light.ttf);
+}
+h1
+{
+font-family: h1;
+margin: 0px;
+}
+p
+{
+font-family: p;
+font-size: 12px;
+color: #6E6E6E;
+}
+h3
+{
+font-family: logo;
+margin: 20px;
+font-size: 14px;
+}
+h4
+{
+font-family: h1;
+margin: 20px;
+font-size: 22px;
+color: #B92325;
+}
+.container
+{
+width: 100%;
+height: auto;
+position: relative;
+display: block;
+margin: -8px 0 0 0;
+}
+.header
+{
+width: 100%;
+height: 210px;
+background-color: white;
+position: fixed;
+left: -0.1px;
+z-index: 100;
+margin: 0 0 0 0;
+}
+.logo
+{
+font-family: logo;
+width: 100%;
+height: 100px;
+text-align: center;
+padding: 50px 0 0 0;
+background-color: white;
+font-size: 35px;
+}
+.menu
+{
+border-top-style: solid;
+border-width: 1px;
+width: 100%;
+margin: 0px;
+display: flex;
+justify-content: center;
+}
+ul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+ul li
+{
+padding: 20px 30px 21px 30px;
+float: left;
+transition: all .3s ease;
+}
+ul li a
+{
+font-family: buton;
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+ul li:hover
+{
+background-color: black;
+}
+ul li:hover a
+{
+color: white;
+}
+ul li
+{
+cursor: pointer;
+}
+.slider
+{
+width: 100%;
+height: 600px;
+position: absolute;
+top: 210px;
+}
+.slider-img
+{
+width: 100%;
+height: auto;
+position: absolute;
+}
+.slider-img img
+{
+width: 100%;
+height: auto;
+}
+.btn-space
+{
+width: 50%;
+height: 600px;
+float: left;
+position: relative;
+}
+.btn-space .btn
+{
+font-family: buton;
+position: absolute;
+color: white;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+border-style: solid;
+border-color: white;
+border-width: 2px;
+border-radius: 20px;
+font-size: 24px;
+width: 230px;
+height: 60px;
+cursor: pointer;
+text-align: center;
+font-weight: bold;
+transition: all .3s ease;
+}
+.btn-space .btn:hover
+{
+border-color: black;
+background-color: black;
+color: white;
+border-radius: 0px;
+}
+.salons
+{
+width: 100%;
+height: 500px;
+background-color: #ECECEC;
+position: absolute;
+top: 830px;
+}
+.salons-textpl
+{
+width: 100%;
+height: auto;
+position: absolute;
+top: 80px;
+text-align: center;
+}
+.salons-itempl
+{
+width: 100%;
+height: 270px;
+display: flex;
+justify-content: center;
+position: absolute;
+top: 230px;
+}
+.salons-item
+{
+width: 160px;
+height: 200px;
+margin: 0px 5px 0px 5px;
+float: left;
+position: relative;
+top: 0px;
+transition: all .3s ease;
+}
+.salons-item img:active
+{
+transform: scale(1.8);
+z-index: 6;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.salons-item img
+{
+width: 160px;
+position: absolute;
+top: 0px;
+transition: all .3s ease;
+z-index: 2;
+border-radius: 20px 20px 0 0;
+transform: scale(1);
+}
+.salons .btn
+{
+width: 160px;
+height: 40px;
+font-family: buton;
+position: absolute;
+top: 160px;
+border: none;
+border-radius: 0px 0px 20px 20px;
+background-color: white;
+font-weight: bold;
+cursor: pointer;
+transition: all .3s ease;
+z-index: 1;
+}
+.salons-item .btn:hover
+{
+background-color: black;
+color: white;
+}
+.salons-item:hover img
+{
+border-radius: 0;
+}
+.salons-item:hover .btn
+{
+border-radius: 0;
+}
+.salons-item:hover
+{
+margin: 0px 10px 0 10px;
+top: -10px;
+}
+.prod
+{
+width: 100%;
+height: 680px;
+background-color:#111111;
+position: absolute;
+top: 1330px;
+z-index: 1;
+}
+.prod-textpl
+{
+width: 100%;
+height: auto;
+background-color: transparent;
+text-align: center;
+color: goldenrod;
+position: absolute;
+top: 80px;
+}
+.prod-itempl
+{
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+position: absolute;
+top: 230px;
+}
+.prod-item
+{
+padding-top: 30px;
+position: relative;
+width: 15%;
+min-width: 180px;
+height: auto;
+background-color: #ECECEC;
+text-align: center;
+margin: 0px 15px 0px 15px;
+border-radius: 20px;
+transition: all 0.3s ease;
+}
+.prod-item img:active
+{
+transform: scale(3.5);
+}
+.prod-item:hover img
+{
+transform: scale(1.2);
+position: relative;
+}
+.prod-item:hover
+{
+border-radius: 0;
+margin: -20px 50px 20px 50px;
+}
+.prod-item:hover .btn
+{
+border-radius: 0;
+}
+.prod-item img
+{
+width: 180px;
+height: 180px;
+transform: scalẹ(1);
+transition: all 0.3s ease;
+}
+.prod-item .btn
+{
+width: 100%;
+min-width: 180px;
+height: 50px;
+font-family: buton;
+border: none;
+border-radius: 0 0 20px 20px;
+background-color: white;
+font-weight: bold;
+cursor: pointer;
+transition: all .3s ease;
+}
+.prod-item .btn:hover
+{
+background-color: goldenrod;
+}
+.more
+{
+color: orange;
+width: 100%;
+height: 350px;
+background-image: url( "../img/bg-3.jpg");
+background-position: center;
+background-size: 100%;
+position: relative;
+top: 2010px;
+padding-top: 70px;
+text-align: center;
+}
+.more p
+{
+color: white;
+}
+.more .btn
+{
+color: white;
+text-decoration-color: aliceblue;
+font-family: buton;
+background-color: transparent;
+border-style: solid;
+border-color: white;
+border-width: 2px;
+border-radius: 20px;
+font-size: 16px;
+width: 230px;
+height: 60px;
+cursor: pointer;
+text-align: center;
+font-weight: bold;
+transition: all .3s ease;
+}
+.more .btn:hover
+{
+border: black;
+background-color: black;
+color: white;
+border-radius: 0px;
+}
+.footer
+{
+padding-top: 70px;
+width: 100%;
+height: 400px;
+background-color: transparent;
+position: absolute;
+top: 2430px;
+}
+.footer-lf
+{
+padding: 0px 0px 0px 30px;
+width: 45%;
+float: left;
+}
+table
+{
+font-family: p;
+width: 100%;
+}
+td,th
+{
+text-align: left;
+padding: 8px;
+}
+.footer-rt
+{
+width: 50%;
+float: right;
+}
+form
+{
+font-family: p;
+padding-top: 10px;
+}
+input[type=text], select {
+width: 60%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 0px;
+}
+input[type=submit]
+{
+font-family: buton;
+width: 30%;
+background-color: transparent;
+color: black;
+padding: 14px 20px;
+margin: 8px 0;
+border: 1px solid #000000;
+border-radius: 15px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+input[type=submit]:hover
+{
+background-color: black;
+color: white;
+border-radius: 0px;
+}
+.sub
+{
+width: 50%;
+float: left;
+}
+.social
+{
+width: 50%;
+float: right;
+}
+.social table td
+{
+padding: 0;
+}
+.social table
+{
+width: 180px;
+}
+
